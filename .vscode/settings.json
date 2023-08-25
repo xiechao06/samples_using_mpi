@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.jsx": "javascriptreact",
+        "type_traits": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.default.compilerPath": "/usr/local/bin/g++-13",
+}

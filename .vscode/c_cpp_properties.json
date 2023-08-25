@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+            ],
+            "defines": ["SPDLOG_USE_STD_FORMAT"],
+            "macFrameworkPath": [
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "macos-clang-x64",
+            "compilerArgs": ["-Wall", "-Wextra", "-Wpedantic", "-Werror"]
+        }
+    ],
+    "version": 4
+}

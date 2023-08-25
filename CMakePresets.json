@@ -1,0 +1,41 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "dev-gcc",
+      "displayName": "GCC 13.1.0",
+      "description": "Using compilers: C = /usr/local/bin/gcc-13, CXX = /usr/local/bin/g++-13",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}",
+        "CMAKE_C_COMPILER": "/usr/local/bin/gcc-13",
+        "CMAKE_CXX_COMPILER": "/usr/local/bin/g++-13",
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "dev-gcc-release",
+      "displayName": "GCC 13.1.0 Release",
+      "inherits": ["dev-gcc"],
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "dev-gcc-ninja-debug",
+      "description": "",
+      "displayName": "",
+      "configurePreset": "dev-gcc",
+      "configuration": "Debug"
+    },
+    {
+      "name": "dev-gcc-ninja-release",
+      "description": "",
+      "displayName": "",
+      "configurePreset": "dev-gcc-release",
+      "configuration": "Release"
+    }
+  ]
+}
