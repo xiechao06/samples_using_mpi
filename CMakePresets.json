@@ -8,8 +8,8 @@
       "binaryDir": "${sourceDir}/build/${presetName}",
       "cacheVariables": {
         "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}",
-        "CMAKE_C_COMPILER": "/usr/local/bin/gcc-13",
-        "CMAKE_CXX_COMPILER": "/usr/local/bin/g++-13",
+        "CMAKE_C_COMPILER": "${env:CONDA_PREFIX}/bin/gcc",
+        "CMAKE_CXX_COMPILER": "${env:CONDA_PREFIX}/bin/g++",
         "CMAKE_BUILD_TYPE": "Debug"
       }
     },

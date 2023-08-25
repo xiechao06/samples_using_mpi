@@ -3,16 +3,24 @@
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/**",
+                "${workspaceFolder}/**"
             ],
-            "defines": ["SPDLOG_USE_STD_FORMAT"],
+            "defines": [
+                "SPDLOG_USE_STD_FORMAT"
+            ],
             "macFrameworkPath": [
                 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
             ],
             "cStandard": "c17",
             "cppStandard": "c++20",
             "intelliSenseMode": "macos-clang-x64",
-            "compilerArgs": ["-Wall", "-Wextra", "-Wpedantic", "-Werror"]
+            "compilerArgs": [
+                "-Wall",
+                "-Wextra",
+                "-Wpedantic",
+                "-Werror"
+            ],
+            "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
     "version": 4

@@ -12,6 +12,7 @@ const auto MINIMUM_LOG_LEVEL = spdlog::level::trace;
 
 void root(mpi::communicator world, double e)
 {
+    spdlog::trace("root: send e {}", e);
 }
 
 int main(int argc, const char **argv)

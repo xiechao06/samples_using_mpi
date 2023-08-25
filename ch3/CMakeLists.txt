@@ -1,8 +1,9 @@
 project(ch3 VERSION 0.1.0 LANGUAGES CXX)
 
+find_package(MPI REQUIRED)
 find_package(spdlog REQUIRED)
 find_package(Boost REQUIRED COMPONENTS MPI)
-
+# find_package(Boost REQUIRED)
 
 foreach(target pi matvec matmat monte-carlo)
     add_executable(${target} ${target}.cc)

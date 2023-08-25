@@ -1,8 +1,10 @@
 {
     "files.associations": {
         "*.jsx": "javascriptreact",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "string": "cpp",
+        "iostream": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled",
-    "C_Cpp.default.compilerPath": "/usr/local/bin/g++-13",
+    "C_Cpp.default.compilerPath": "${env:CONDA_PREFIX}/bin/g++-13",
 }
